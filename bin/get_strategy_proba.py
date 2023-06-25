@@ -5,11 +5,11 @@ from src.auto_roulette import AutoRoulette
 
 
 if __name__ == "__main__":
-    initial_balance = 1000
-    objective = 2000
-    simulations = 10000
+    initial_balance = 100
+    objective = 200
+    simulations = 100000
 
-    strategy = Martingale(100)
+    strategy = Martingale(10)
     player = Player("Player", strategy, initial_balance)
     roulette = AutoRoulette([player])
 

@@ -9,7 +9,7 @@ class Player:
         self.bets_history = []
         self.winnings_history = []
 
-    def receive_winnings(self, winnings, wheel):
+    def receive_winnings(self, winnings):
         self.balance += winnings
         self.cash_history.append(self.balance)
         if self.balance <= 0:

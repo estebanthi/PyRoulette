@@ -18,7 +18,7 @@ class RouletteGame:
         for player in self.players:
             player_winnings = self.calculate_winnings(player)
             player.win(player_winnings, wheel) if player_winnings > 0 else player.lose(wheel)
-            player.receive_winnings(player_winnings, wheel)
+            player.receive_winnings(player_winnings)
 
     def calculate_winnings(self, player):
         player_bets = self.bets[player]

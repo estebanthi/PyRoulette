@@ -4,9 +4,9 @@ import src.bets
 
 
 if __name__ == "__main__":
-    initial_balance = 1000
-    objective = 1100
-    simulations = 1000
+    initial_balance = 100
+    objective = 1000
+    simulations = 1000000
 
     strategies = [Martingale(1), Martingale(10), Martingale(100), Dalembert(1), Dalembert(10), Dalembert(100),
                   Paroli(1), Paroli(10), Paroli(100), Fibonacci(1), Fibonacci(10), Fibonacci(100),
